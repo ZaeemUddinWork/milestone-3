@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Resume Builder</h1>
+    <section id="container" class="form-box">
+        
+        <div>
+            
+            <form action="#">
+                <legend id="title">Contact</legend>
+                <ul class="resume-bar">
+                    <li class="resume-list-items "><span>&#8680;</span><button id="contact-list" class="bar-btn active">Contact</button></li>
+                    <li class="resume-list-items"><span>&#8680;</span><button id="education-list" class="bar-btn" disabled>Education</button></li>
+                    <li class="resume-list-items"><span>&#8680;</span><button id="skill-list" class="bar-btn" disabled>Skill</button></li>
+                    <li class="resume-list-items"><span>&#8680;</span><button id="work-list" class="bar-btn" disabled>Work Exprience</button></li>
+                    <li class="resume-list-items"><span>&#8680;</span><button id="resume-list" class="bar-btn" disabled>Your Resume</button></li>
+                </ul>
+            <div id="contact-box" class="box-contact">
+                
+                <div class="input-2box">
+                <div class="form-box">
+                <label for="fname">First Name <span class="required">*</span></label>
+                <input type="text" id="fname" placeholder="John">
+                <span class="error">First Name's box shouldn't be empty</span>
+                </div>
+                <div class="form-box">
+                <label for="lname">Last Name <span class="required">*</span></label>
+                <input type="text" id="lname" placeholder="Doe">
+                <span class="error">Last Name's box shouldn't be empty</span>
+                </div>
+                </div>
+                <br>
+                <div class="form-box">
+                <label for="profession">Profession <span class="required">*</span></label>
+                <input type="text" name="profession" id="profession" placeholder="Graphics Designer">
+                <span class="error">Profession's box shouldn't be empty</span>
+                </div>
+                <br>
+                <div class="form-box">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" placeholder="johndoe@gmil.com">
+                <span class="error">Please Enter Email or Proper format email</span>
+                </div>
+                <br>
+                <div class="form-box">
+                <label for="phoneNo">Phone Number <span class="required">*</span></label>
+                <input type="number" id="phoneNo" placeholder="+12 344567-910">
+                <span class="error">Number's box shouldn't be empty</span>
+                </div>
+                <br>
+                <div class="form-box">
+                <label for="address">Address <span class="required">*</span></label>
+                <input type="text" id="address" placeholder="New York,USA">
+                <span class="error">Adddress's box shouldn't be empty</span>
+                </div>
+                <br>
+
+                <div class="form-box">
+                <label for="website">Website Link</label>
+                <input type="text" id="website" placeholder="www.example.com">
+                <span class="websiteValidation"></span>
+                </div>
+                </div>
+            <div id="education-box" class="box-education">
+                
+                <div class="form-box">
+                <label for="name-institute">Name (school/College/Universty/other institute) <span class="required">*</span></label>
+                <input type="text" placeholder="Oxford University">
+                <span class="error">Box shouldn't be empty</span>
+                </div>
+
+                <br>
+                <div class="input-2box">    
+                <div class="form-box">
+                <label for="start-year">Start Year</label>
+                <input type="date" id="start-year" >
+                <span class="error">Enter Start year</span>
+                </div>      
+
+                <div class="form-box">
+                <label for="end-year">End Year</label>
+                <input type="date" >
+                </div>
+                </div> 
+                
+            </div>
+            <div class="btn-container">
+            <button id="back-btn" type="button" class="back-btn btn " disabled>Back</button>
+            <button id="next-btn" type="button" class="next-btn btn">Next</button>
+            </div>
+            </form>
+        </div>
+    </section>
+<script src="./script.js"></script>
+</body>
+</html>
